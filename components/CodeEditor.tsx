@@ -95,7 +95,7 @@ const CodeEditor: React.FC<Props> = ({
         aria-hidden="true"
         style={{ ...styles.editor, ...styles.highlight, ...contentStyle }}
       >
-        <Highlight theme={themes.github} code={code} language="tsx">
+        <Highlight theme={themes.dracula} code={code} language="jsx">
           {({ tokens, getLineProps, getTokenProps }) => (
             <>
               {tokens.map((line, i) => (
